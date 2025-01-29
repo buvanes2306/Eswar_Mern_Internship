@@ -1,0 +1,13 @@
+body {
+    background-color: gray;
+}
+
+label {
+    color: rebeccapurple;
+
+}
+
+button {
+    display: block;
+    margin-top: 10px; 
+}
