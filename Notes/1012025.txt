@@ -1,0 +1,19 @@
+10/1/2025
+Spread operator (combining):
+ex:
+const array1 =[1, 2, 3];
+const array2 =[4, 5, 6];
+
+const combainedArray = [...array1, ...array2];
+
+console.log('Array 1:', array1);
+console.log('Array 2:', array2);
+console.log('CombainedArray:', CombainedArray);
+
+
+=============================================================
+ 
+Components Intercommunication:
+
+create ParentComponent, ChildComponent.
+parentComponent will pass data and a function to the childComponent, and the child component will use the function to send the data back to the parent component.

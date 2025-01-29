@@ -1,0 +1,32 @@
+20/1/2025
+
+state: which means data
+usestate returns an array of two values (initial state and updated state)
+updated state is a function
+
+lets say we have five components: named as c1,c2....
+now passing the props
+
+
+
+c1 child is c2,c2's child is c3, c3,s chid is c4...
+every component should display its name as message.
+display them by size wise h1 to h5  
+
+while exporting there can be any error so if one approach is not working then use another approach.
+
+for efficiency we are using oops.
+for passing value.
+the only way to achieve passing props in hierarchy
+
+this is not efficient, to make it efficient we have an exclusive ,use context.
+four component: app, container, users, user.
+
+tWO 	IMPORTANT THING WHILE USING context:
+*creating context.
+*use context
+
+In the given example create context will be done in app component and that will be used in user component using used context. 
+
+Synchronizing A component with external system after our action monitoring or seeing the side effects happening in the functional components is possible using use effect hook.
+

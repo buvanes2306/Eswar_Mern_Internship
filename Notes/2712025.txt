@@ -1,0 +1,110 @@
+27/1/2025
+
+axios
+
+
+
+node js is a popular js library or we call it a run.enviorment which allows us to run java script on server_side.
+
+node maintain split termina in vs code in order to use clint and server
+
+run command: start the server first , command : server.js
+command to run client: npm start.
+
+first we need to install express.
+reqire is a keyword ,it is used to activate the express, require is from node js.
+(/ is a routing parameter), request is from client response from server. server will response in json file.
+
+in this we need to create our port(like in react localhost:3000)
+
+run script is missing error; for this one solving problem is deleting and restoring it.
+we can delete package.json to get it back the command is "npm init -y"
+
+const express = require("express");
+
+//create an instance of an express application
+// used for routing ,middleware managment and many reasons to keep routing clean
+const app = express();
+// define the prot number the server will liste on 
+const port = 3000;
+
+//define a route for the https ger request to the root url ('/')
+//req represents the request object, and res represents the response object
+// means browser asking the server(so it request) to give msg hello node js its giving 
+// back as response
+// node:browser port 3000 is client
+
+//get(req,res)
+//here req belongs to client
+//and res belong to server
+app.get('/',(req,res) => {
+    res.send('');
+});
+
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
+
+
+AXIOS:
+
+it is a popular js library used to make http request from the browser(client) or node js(server)
+axios is known for easy and clean syntax also flexibility especially work well with api's and rest api. Whwn we write an api for an exclusive purpose it is called rest api.
+
+CORS: cross origin recourse sharing
+
+When a webpage requires information from recourse (from any other sites) wheather  to accept the request and proses will be defined in route book on this porpose we will use cros
+
+commands: to install axios: npm i cors
+command: npm i -g nodemon
+this command is used to save the programs.
+
+
+server.js
+const express = require("express");
+const greet = require('../src/greetings');
+const msg = require("../src/modules");
+
+//create an instance of an express application
+// used for routing ,middleware managment and many reasons to keep routing clean
+const app = express();
+// define the prot number the server will liste on 
+const port = 3000;
+
+//define a route for the https ger request to the root url ('/')
+//req represents the request object, and res represents the response object
+// means browser asking the server(so it request) to give msg hello node js its giving 
+// back as response
+// node:browser port 3000 is client
+
+//get(req,res)
+//here req belongs to client
+//and res belong to server
+app.get('/',(req,res) => {
+    res.send('hello, Node.js!');
+});
+
+//use the costum module
+app.get('/greet',(req,res) => {
+    greet();
+    res.send('Check the server console for greeting massage!');
+});
+
+//use the costum msg module
+app.get('/msg',(req,res) => {
+    msg();
+    res.send('Check the server console for msg massage!');
+});
+
+
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
+
+
+
+we are requesting data from server 
+sever data: hello this is data from servent,
+in datacomponent.js  as clien tusing http get method via api/data
+server response as json 
+from the Jason file i want to filter only the message so we are using from cors response.data.message.

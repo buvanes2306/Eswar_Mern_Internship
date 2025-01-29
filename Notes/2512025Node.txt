@@ -1,0 +1,10 @@
+25/1/2025Node
+Node.js
+In node we can use express js as middle value
+
+const http: require("http");
+const express = require("express");
+const sayHello = require('./greet'):
+function sayHello(name){
+	return 'Hello, ${name}!';
+}

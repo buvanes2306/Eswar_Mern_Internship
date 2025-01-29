@@ -1,0 +1,99 @@
+24/1/2025
+
+mongo db:
+mongo db is the client or server: it is a sever .
+
+compass helps to fetch data from mongo db server means compass helps us to reach  mango db .. its like client.
+compass is an interface.
+
+mongosh:
+mango shell replace with mangosh
+The MongoDB shell gives you an intractive environment variables.
+Direct Access: it allows you to interactdirectly with your MongoDB server.
+
+DATA MODELLING:
+nothing but fix structure of ur data planing your structure.
+
+things to learn recat,bootstrap,mongo db
+
+SCHEME:
+scheme is the actuall blueprint of db which you have create by fixing the formate using data modelling example employee,employee database,salary etc
+in sql grouph of data is record and in mongo db it is called documents.
+
+NO SQL
+
+SQL - RECORD
+MONGO - DOCUMENT
+
+SQL - TABLE
+MONGO - COLLECTION 
+
+COLLECTION ARE STORED IN DB
+MONGO WILL HAVE MULTIPLE DB
+
+install mango db and create a connection in it.
+then open mongosh sell of mongodb which is save in notepade
+now create a db using command: use aiml
+
+command: show dbs (After the command use database name)
+this shows that the connection is sequre.
+
+next command:Employee> db.emp.insertOne({empname: "Triger"})
+this command is used to add the record.
+in the above command Employee is connection name, and emp is the collection name.
+
+
+next command:Employee> db.emp.insertOne({empname:"jesus",contact:1234})
+adding two data in this commad.
+here name is string and contact is int.
+
+db.emp.find(),pretty() to see output in structure here pretty is removed from programing language.
+
+clr is to clear the shell not the value.
+
+next command: Employee> db.emp.insertOne({name:"sam",contact:789,likes:"sports",fav:{color:"blue",food:"pizza"}})
+here a object is {} used inside object{}
+
+next command:Employee> db.emp.insertMany([{name: "Alice",age: 25},{name: "Bob",age: 28},{name:"Charlie", age: 30}])
+this command is used to add multi values.
+
+next command: Employee> db.emp.find({name:"sam"})
+we can see the content using this command
+
+next command:deleteOne,deleteMany (command is used only if it has many data)
+syntax:Employee> db.emp.deleteMany({name:"Asus"})
+
+command: crud is used to delete all the data
+ 
+command: replace if there is only name then we can use add age, date of birth etc,but technically it changes the document.
+syntax:db.emp.replaceOne({name:"jhon"}, {name:"jhon",age: 15, dateofbirth:"23-01-1998"})
+
+(
+next commands:
+update array
+db.customers.updateOne({name:'Arjun Reddy'},{$set:{contactNo:[5987452368,8536547859]}})
+
+db.customers.updateMany({name:{$in:['Neha Singh','Vikram Sharma','Arjun Gupta']}},{$set:{hobbies:['travel','sports']}})
+
+db.customers.updateMany({name:{$in:['Meera Iyer','Nidhi Kapoor','Bharat Rao']}},{$set:{hobbies:['cooking','sports']}})
+
+db.products.find({price:{$eq:80000}})
+
+db.products.find({price:{$gt:80000}})
+
+db.products.findOne({price:{$gt:80000}})
+
+
+db.products.find({price:{$gte:80000}})
+
+db.products.find({price:{$lt:80000}})
+
+db.products.find({price:{$lte:80000}})
+
+db.products.find({price:{$ne:80000}})            
+)
+
+name,model,color,status,price,one more object(vendurename,vendureprice)
+
+1.list one particular model laptop first keep the status unavailable,then change the status
+

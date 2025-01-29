@@ -1,0 +1,22 @@
+28/1/2025
+ inside src create users.js, Createuser.js, Updateuser.js
+   racf
+
+thread operation using
+
+name age email,  the content should need to store in mongo db.
+
+dependencies:(things to install)
+router
+axios
+express -cors
+
+create server folderinside that terminal of that folder: npm init and give enter
+
+inside(app.js)
+add routing for these components given above
+
+in index.js  which is inside src write backend code 
+
+
+employee id, name, contact.

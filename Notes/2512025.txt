@@ -1,0 +1,90 @@
+25/1/2025
+
+command : db.emp.dropDatabase()
+
+command:db.emp.updateOne({name:"Arjun Reddy"},{$set:{contact:[9042751804,9876843210]}})
+in this command the first number is already given , so duplication dose'nt happen only wrong one will get updated.
+
+command:
+
+wanted to filter all the records with the price range 30,000 to 50000 range and go with dell .
+
+db.details.insertMany({"_id": 1, "name": "sy1","age" : 25,"city" : "coimbatore"})
+
+computers> db.laptops.find({$and:[{price:{$gt:80000}},{brand:"Apple"}]})
+
+computers> db.laptops.find({$and:[{color:"silver"},{price:{$gte: 30000}}]})
+here the and is like if condition if both the condition is true then it will get the  output.
+
+q1) create a db called bank create two collections under that first: costumer_personl,  costumer_account.
+data model for first: id, name ,address[array], phone number with two value [object,id need to be 1,2], age.
+data model for second; id, account number int , branch string , bank name string, ifsc code string, current balance float, account type (svaings account and bussinuss), over draft (only yes or no).  
+filter only od catagories.
+
+query1: only od is yes
+2; display only the costumers address were the branch names are same
+3; current balance 10000,25000 display the phone number.
+4: only savings account people
+5: add feild called status value same apply to people only apply it to people whos ifsc code is equal.
+
+query 1:
+db.costumerAccount.aggregate([{$match : {overDraft: "Yes"}},
+{$lookup: {from: "costomerPersonal", localField : "_id",
+foreignFeild: "_id",
+as: "costomerDetails"}}])
+
+Query2:
+
+
+Query3: 
+query 3:
+
+db.cust_acc.aggregate([
+  {
+    $match: {
+      curr_balance: { $gte: 10000, $lte: 20000 }
+    }
+  },
+  {
+    $lookup: {
+      from: "cost_porsonal",
+      localField: "_id",
+      foreignField: "_id",
+      as: "personal_details"
+    }
+  },
+  {
+    $project: {
+      phone: "$cost_porsonal.phone"
+    }
+  }
+])
+
+
+
+query 4:
+
+db.cust_acc.aggregate([
+  {
+    $match: {
+      accountType: "savings"
+    }
+  },
+  {
+    $lookup: {
+      from: "customerPersonal",
+      localField: "_id",
+      foreignField: "_id",
+      as: "personal_details"
+    }
+  },
+  {
+    $project: {
+      "personal_details._id": 1,
+      "personal_details.name": 1,
+      "personal_details.address": 1,
+      "personal_details.phoneNo": 1,
+      "personal_details.age": 1
+    }
+  }
+])

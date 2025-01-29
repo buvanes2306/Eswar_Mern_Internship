@@ -1,0 +1,67 @@
+8/1/2025
+
+q1) write a promise - db 
+ persons - A,B,C
+distance andra to A - 5000
+Andhra to B - 2000
+Andhra to C - 1000
+
+Expected output :
+A will reach home first, then B, then C.
+
+when there the is more than one promise in order to review them we can use promise inbuilt methods according to the requirements
+methods: promise.all , promise.any, promise.allsettled, promise.race.
+
+Promise ALL:
+once it sees promise false it will stop 
+Promise ANY:
+gives the shortest time promise provided status should be true
+Promise ALLSETTLED:
+will display one among these three states or results:
+1, fulfill
+2, rejected
+3, pending
+
+study react.
+REACT:
+It is a library or frame work of JavaScript example: Netflix and Amazon
+html websites you tube .
+
+to use react:
+step1: create a new folder called react in desktop.
+step2: open command prompt type the cd "path of the folder".
+step3: node -v to check version, npm -v to find the version.
+	commands used in command prompt:
+	* npx create-react-app appname demo (here app name demo)
+	* npm start
+	*npm i web-vitals if npm doesn't start.
+		open your app at port 3000
+to make it work
+1.open your react folder
+	u will see your app folder got created.
+
+step 4: to open the demo in vs code. go to your cmd enter command: cd demo (Enter)
+								   code .
+
+
+
+In react vscode: two important folders in react 1.public folder and 2.src
+three important files:
+index.html
+index.js
+index.css
+
+
+as for now don't touch index files
+initially do or write your code in app.js
+
+dom
+React follows virtual dom
+unlike html here  once dom gets created the changes or manipulation what we do gets completed and only that part will be rerendured 
+where as in html every time we make change entire dom will be rerendured.
+
+Web-application:
+when web application created by reactjs each and everything is called as components
+components:
+1.Functional components.
+2.class components.

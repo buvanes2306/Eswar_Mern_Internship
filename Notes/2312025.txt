@@ -1,0 +1,18 @@
+23/1/2025
+
+install bootstrap
+
+npm install bootstrap react-bootstrap
+
+a front end easy dsigning.
+
+ button props:
+<button type="button",
+	class='btn btn-primary btn-lg btn-block"
+	data-toggle ="botton"
+	aria-pressed="false"
+	autocomplete="off"
+	disabled>
+	
+<div class="container mt-5"
+	<nav aria-lable="breadcrumb">

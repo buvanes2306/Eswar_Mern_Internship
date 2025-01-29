@@ -1,0 +1,41 @@
+22/1/2025
+
+installation:
+npm i @reduxjs/toolkit react-redux
+
+explanation: here reduxjs/toolkit is reduc library/ react-redux is a package which connects 
+react component with redux.
+
+using useContext hook
+we can manage state,if it gets more more complicated only we goinģto redux, so gonna make example
+complicated. so gonna use router example and use redux in that to manage state 
+
+
+INSTALL ROUTER
+npm i react-router-dom
+
+ROUTER ARCHITECTURE
+(=> represents inside)
+ router => inside router routes => route => path => route => routes => router.
+
+task:
+step 1: create this using routing home using about contact.
+
+
+setting up redux:
+
+create 2 folders for the above under src 1.app for store 2.slices for slices
+
+step2: inside slices folder create a file called userslice.js 
+
+step3: create a file store.js in app
+
+now Redux setup is ready , go ahead connect redux with react
+
+now we have to make changes in useSelector hook - TO access data from redux
+
+
+explanation:
+state is reducer userinfo from store user from slice
+consr user-useSelect ((state)=>state.userinfo.user);
+here state is call back function u can write (states)

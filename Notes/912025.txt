@@ -1,0 +1,25 @@
+9/1/2025
+probs and states
+every component will have probs and states
+PROBS: it wont change example name tatas, Bislrey
+STATES: it changes or we can change it example: water level in bottle (initial state :full, updated state: half, current state empty).
+
+Flipkart website:
+homepage: {grocery, mobile, fashion} the are the components.
+	*mobiles: component name mobiles
+		props: name, version.
+		state: price, discount, stock.
+
+Reacts - Routes
+components: class component and functional component
+earlier in it industry they were using class component reason we state concept was not available with function components
+Hooks is used to implement state in functional components
+Types:
+1, use State
+2, use Effect
+3, use Ref
+4, use Context 
+5, use Reducer 
+
+Best Example of use State : counter clock
+Stating the initial state as  zero we can increment it decrement it reset  it using hook

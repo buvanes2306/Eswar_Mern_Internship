@@ -1,0 +1,11 @@
+11/1/2025
+
+use effect title one:
+create a component , the component name is timer.
+upon the condition or action we apply in our functional components monitoring the impact or side effects can be done using use effect whom.
+
+Study  rendering in js. 
+
+use effects accepts two oparations:
+*callback function
+*constructor

@@ -1,0 +1,20 @@
+21/1/2025
+
+
+USEREDUCER:
+	Same as usestate to manage or update states that is data that is values of components.
+
+step1: create increment decrement program using usestate
+
+step2: replace usestate with use reducer
+
+note:
+point1: usereducer takes 2 arguments first is reducerfunction which says what u want to do (like increment or decrement),second is initial value of state.
+point2: usereducer returns array with two values like usestate.
+	first is that initial count and second is dispatch function we call them as *state and dispatch*
+	Here state will hold initial value and updated once u call dispatch function and dispatch will trigger user reduction function.
+	(---now this state will hold that initial value and updated once u call dispatch reducerfunction will be triggered)
+
+
+q1: get a password from the user as input ,if the password is correct display the component ,display login granted, if the password is incorrect, display access denied components.
+
